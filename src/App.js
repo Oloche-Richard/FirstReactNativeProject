@@ -3,17 +3,19 @@ import { StyleSheet, Text, TextInput, View, Button } from "react-native";
 
 function App() {
   return (
-    <View style={styles.container}>
+    <View style={styles.appCcontainer}>
       <View>
-        <TextInput />
+        <TextInput placeholder="Enter goals here..." />
       </View>
-      <View></View>
+      <View>
+        <Button title="Add Goal" />
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  appContainer: {
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
