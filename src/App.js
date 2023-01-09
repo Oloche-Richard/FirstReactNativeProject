@@ -15,7 +15,7 @@ function App() {
   }
 
   function deletetGoalHandler(id) {
-    setCourseGoals(currentCourseGoals => {
+    setCourseGoals((currentCourseGoals) => {
       return currentCourseGoals.filter((goal) => goal.id !== id);
     });
   }
